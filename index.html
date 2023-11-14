@@ -42,33 +42,37 @@
       <div class="home-container">
         <section class="home-hero">
           <h1 class="home-header">
-            <span class="home-text">certified&nbsp;</span>
+            <span>fucker</span>
             <br />
           </h1>
+          <img
+            alt="pastedImage"
+            src="public/external/pastedimage-ml5h-1500w.png"
+            class="home-pasted-image"
+          />
           <h1 class="home-header1">
-            <span>fucker</span>
+            <span class="home-text2">certified&nbsp;</span>
             <br />
           </h1>
           <div class="home-heading"></div>
         </section>
-        <section class="home-cards"><div class="home-row"></div></section>
+        <section class="home-cards"></section>
         <section class="home-roadmap">
-          <div class="home-list">
-            <div class="home-step">
-              <div class="home-heading1">
-                <h2 class="home-header2">i have no idea what i'm doing</h2>
-              </div>
-            </div>
-          </div>
+          <a
+            href="https://example.com"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="home-link"
+          >
+            <span>dsc.gg/gtnsfzl</span>
+            <br />
+          </a>
         </section>
         <footer class="home-footer">
           <div class="home-main">
             <div class="home-branding"><div class="home-socials"></div></div>
           </div>
-          <span class="home-copyright">
-            <span>who am i</span>
-            <br />
-          </span>
+          <div class="home-row"></div>
         </footer>
         <div>
           <div class="home-container2">
@@ -93,12 +97,10 @@
                accordionContainers.forEach((accordionContainer, index) => {
                    accordionContainer.addEventListener('click', () => {
                        if (accordionContents[index].style.display === 'flex') {
-                           //
                            accordionContents[index].style.display = 'none';
                            accordionIconsClosed[index].style.display = 'flex';
                            accordionIconsOpen[index].style.display = 'none'
                        } else {
-                           //
                            accordionContents.forEach((accordionContent) => {
                                accordionContent.style.display = 'none';
                            });

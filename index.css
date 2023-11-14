@@ -10,6 +10,7 @@
 .home-hero {
   gap: var(--dl-space-space-fiveunits);
   width: 100%;
+  height: 873px;
   display: flex;
   max-width: 1440px;
   align-items: center;
@@ -18,25 +19,27 @@
   padding-right: var(--dl-space-space-fiveunits);
   flex-direction: column;
   padding-bottom: var(--dl-space-space-sixunits);
+  background-image: linear-gradient(90deg, rgb(120, 255, 231) 1.00%,rgb(103, 152, 224) 53.00%,rgb(116, 90, 191) 99.00%);
 }
 .home-header {
+  color: transparent;
+  font-size: 90px;
+  max-width: 900px;
+  font-style: normal;
+  text-align: center;
+  font-weight: 500;
+  line-height: 108px;
+}
+.home-pasted-image {
+  z-index: 100;
+}
+.home-header1 {
+  color: transparent;
   width: 365px;
   font-size: 90px;
   max-width: 900px;
   font-style: normal;
   text-align: left;
-  font-weight: 500;
-  line-height: 108px;
-}
-.home-text {
-  color: #ffffff;
-}
-.home-header1 {
-  color: #2189e4;
-  font-size: 90px;
-  max-width: 900px;
-  font-style: normal;
-  text-align: center;
   font-weight: 500;
   line-height: 108px;
 }
@@ -59,57 +62,34 @@
   padding-right: var(--dl-space-space-fiveunits);
   flex-direction: column;
   padding-bottom: 120px;
-}
-.home-row {
-  gap: var(--dl-space-space-fiveunits);
-  width: 100%;
-  border: 2px dashed rgba(120, 120, 120, 0.4);
-  display: flex;
-  align-items: center;
-  flex-direction: row;
+  justify-content: center;
+  background-color: #2D3040B3;
 }
 .home-roadmap {
   gap: var(--dl-space-space-fiveunits);
   width: 100%;
+  height: 212px;
   display: flex;
+  position: relative;
   max-width: 1440px;
+  box-shadow: 10px 0px 50px 0px #000000;
   align-items: center;
   padding-left: var(--dl-space-space-fiveunits);
   padding-right: var(--dl-space-space-fiveunits);
   flex-direction: column;
   padding-bottom: 120px;
+  justify-content: center;
+  background-color: #2D3040B3;
 }
-.home-list {
-  gap: 106px;
-  width: 100%;
-  display: flex;
-  align-items: flex-start;
-  padding-top: var(--dl-space-space-threeunits);
-  border-color: rgba(255, 255, 255, 0.3);
-  padding-left: var(--dl-space-space-fiveunits);
-  flex-direction: column;
-  padding-bottom: var(--dl-space-space-threeunits);
-  border-left-width: 1px;
-}
-.home-step {
-  gap: var(--dl-space-space-oneandhalfunits);
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-}
-.home-heading1 {
-  gap: var(--dl-space-space-twounits);
-  width: 100%;
-  display: flex;
-  max-width: 640px;
-  align-items: flex-start;
-  flex-direction: column;
-}
-.home-header2 {
+.home-link {
+  top: 76px;
+  left: 0px;
   color: rgb(255, 255, 255);
-  font-size: 72px;
-  font-style: normal;
-  font-weight: 500;
+  right: 0px;
+  margin: auto;
+  position: absolute;
+  font-size: 40px;
+  text-align: center;
 }
 .home-footer {
   gap: var(--dl-space-space-threeunits);
@@ -123,6 +103,7 @@
   padding-right: var(--dl-space-space-fiveunits);
   flex-direction: column;
   padding-bottom: var(--dl-space-space-threeunits);
+  background-color: #2D3040B3;
 }
 .home-main {
   width: 100%;
@@ -145,9 +126,13 @@
   flex-direction: row;
   justify-content: center;
 }
-.home-copyright {
-  color: rgb(255, 255, 255);
-  font-size: 12px;
+.home-row {
+  gap: var(--dl-space-space-fiveunits);
+  width: 100%;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
 }
 .home-container2 {
   display: contents;
@@ -169,12 +154,12 @@
     max-width: 70%;
     line-height: 43px;
   }
-  .home-text {
+  .home-header1 {
     font-size: 36px;
     max-width: 70%;
     line-height: 43px;
   }
-  .home-header1 {
+  .home-text2 {
     font-size: 36px;
     max-width: 70%;
     line-height: 43px;
@@ -192,18 +177,6 @@
     padding-left: var(--dl-space-space-oneandhalfunits);
     padding-right: var(--dl-space-space-oneandhalfunits);
     padding-bottom: var(--dl-space-space-fourunits);
-  }
-  .home-list {
-    gap: var(--dl-space-space-threeunits);
-    padding-top: 0px;
-    padding-left: var(--dl-space-space-unit);
-    padding-bottom: 0px;
-  }
-  .home-heading1 {
-    gap: var(--dl-space-space-unit);
-  }
-  .home-header2 {
-    font-size: 32px;
   }
   .home-footer {
     gap: var(--dl-space-space-oneandhalfunits);
